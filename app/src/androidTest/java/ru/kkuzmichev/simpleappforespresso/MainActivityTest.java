@@ -19,7 +19,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @LargeTest
-@RunWith(AndroidJUnit4.class)
+
 public class MainActivityTest {
 
     @Rule

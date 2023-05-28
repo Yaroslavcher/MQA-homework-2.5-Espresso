@@ -75,6 +75,8 @@ public class IdlingTest {
 
         ViewInteraction recyclerView = onView(withId(R.id.recycle_view));
         recyclerView.check(matches(isDisplayed()));
+        recyclerView.check(matches((Matcher<? super View>) CustomViewAssertions.isRecyclerView()));
         recyclerView.check(matches(CustomViewMatcher.recyclerViewSizeMatcher(10)));
+
     }
 }
